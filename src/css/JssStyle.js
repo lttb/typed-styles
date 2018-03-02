@@ -1,13 +1,14 @@
+/* eslint-disable no-use-before-define */
+
 import type {BaseStyle} from './BaseStyle'
-import type {PatternStyle} from './PatternStyle'
+
+export type JssStyle = {
+  ...$Exact<BaseStyle>,
+  ...$Exact<JssCustomStyle>,
+}
 
 type JssCustomStyle = {|
   extend?: string | JssStyle,
   composes?: string | string[],
   [selector: string]: JssStyle,
 |}
-
-export type JssStyle = {
-  ...BaseStyle,
-  ...JssCustomStyle,
-}
