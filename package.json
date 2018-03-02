@@ -1,6 +1,6 @@
 {
   "name": "typed-styles",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Typed styles for cssinjs",
   "scripts": {
     "lint": "eslint src",
