@@ -1,3 +1,5 @@
+/* @flow */
+
 /* eslint-disable no-use-before-define */
 
 import type {BaseStyle} from './BaseStyle'

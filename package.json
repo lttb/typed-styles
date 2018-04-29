@@ -19,7 +19,7 @@
     "prebuild": "npm run lint && npm run flow",
     "build": "npm run cp:flow && npm run cp:meta",
     "cp:flow": "flow-copy-source -i '**/spec/**' src lib",
-    "cp:meta": "copyfiles package.json LICENSE README.md './.*' -a -f lib",
+    "cp:meta": "copyfiles package.json LICENSE README.md './.*' -a -f ./**/*.js lib",
     "release": "npm run build && git push --follow-tags && npm publish lib"
   },
   "devDependencies": {
