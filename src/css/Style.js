@@ -1,3 +1,5 @@
+/* @flow */
+
 import type {BaseStyle} from './BaseStyle'
 import type {PatternStyle} from './PatternStyle'
 

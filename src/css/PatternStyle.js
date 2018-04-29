@@ -1,3 +1,5 @@
+/* @flow */
+
 import * as props from './properties'
 
 export type PatternStyle =
