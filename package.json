@@ -2,6 +2,16 @@
   "name": "typed-styles",
   "version": "0.0.1",
   "description": "Typed styles for cssinjs",
+  "main": "src/index.js",
+  "author": "lttb <kenzhaev.artur@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "jss",
+    "styled-jss",
+    "react",
+    "typed-styles",
+    "flowtype"
+  ],
   "scripts": {
     "lint": "eslint src",
     "lint:staged": "lint-staged",
@@ -12,15 +22,6 @@
     "cp:meta": "copyfiles package.json LICENSE README.md './.*' -a -f lib",
     "release": "npm run build && git push --follow-tags && npm publish lib"
   },
-  "keywords": [
-    "jss",
-    "styled-jss",
-    "react",
-    "typed-styles",
-    "flowtype"
-  ],
-  "author": "lttb <kenzhaev.artur@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "copyfiles": "^1.2.0",
