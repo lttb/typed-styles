@@ -7,9 +7,9 @@ npm i typed-styles
 ## Usage
 
 ```js
-import type {Styles} from 'typed-styles'
+import type {Style} from 'typed-styles'
 
-const styles: Styles = {
+const styles: Style = {
   height: 100,
   width: 100,
   display: 'block'
