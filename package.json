@@ -2,7 +2,7 @@
   "name": "typed-styles",
   "version": "0.0.2",
   "description": "Typed styles for cssinjs",
-  "main": "src/index.js",
+  "main": "index.js",
   "author": "lttb <kenzhaev.artur@gmail.com>",
   "license": "MIT",
   "keywords": [
