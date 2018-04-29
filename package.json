@@ -1,6 +1,6 @@
 {
   "name": "typed-styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Typed styles for cssinjs",
   "main": "src/index.js",
   "author": "lttb <kenzhaev.artur@gmail.com>",
