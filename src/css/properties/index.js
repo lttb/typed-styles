@@ -244,6 +244,8 @@ export type boxSizing = 'content-box' | 'border-box' | 'initial' | 'inherit'
 
 export type captionSide = 'top' | 'bottom' | 'initial' | 'inherit'
 
+export type caretColor = color
+
 export type clear = 'none' | 'left' | 'right' | 'both' | 'initial' | 'inherit'
 
 // rect (top, right, bottom, left)
@@ -558,6 +560,8 @@ export type visibility = 'visible' | 'hidden' | 'collapse' | 'initial' | 'inheri
 export type whiteSpace = 'normal' | 'nowrap' | 'pre' | 'pre-line' | 'pre-wrap' | 'initial' | 'inherit'
 
 export type width = 'auto' | length | 'initial' | 'inherit'
+
+export type willChange = string
 
 export type wordBreak = 'normal' | 'break-all' | 'keep-all' | 'initial' | 'inherit'
 export type wordSpacing = 'normal' | length | 'initial' | 'inherit'
