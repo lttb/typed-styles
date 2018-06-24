@@ -29,6 +29,20 @@ export type alignItems =
   | 'initial'
   | 'inherit'
 
+export type alignmentBaseline =
+  | 'baseline'
+  | 'use-script'
+  | 'before-edge'
+  | 'text-before-edge'
+  | 'after-edge'
+  | 'text-after-edge'
+  | 'central'
+  | 'middle'
+  | 'ideographic'
+  | 'alphabetic'
+  | 'hanging'
+  | 'mathematical'
+
 export type alignSelf =
   | 'initial'
   | 'inherit'
@@ -136,6 +150,10 @@ export type backgroundOrigin = 'padding-box' | 'border-box' | 'content-box' | 'i
 
 export type backgroundPosition = [string, string] | 'initial' | 'inherit'
 
+export type backgroundPositionX = length | 'left' | 'center' | 'right'
+
+export type backgroundPositionY = length | 'top' | 'center' | 'bottom'
+
 export type backgroundRepeat =
   | 'initial'
   | 'inherit'
@@ -146,6 +164,20 @@ export type backgroundRepeat =
   | 'initial'
   | 'inherit'
 
+export type backgroundRepeatX =
+  | 'initial'
+  | 'inherit'
+  | 'no-repeat'
+  | 'repeat'
+  | 'unset'
+
+export type backgroundRepeatY =
+  | 'initial'
+  | 'inherit'
+  | 'no-repeat'
+  | 'repeat'
+  | 'unset'
+
 export type backgroundSize =
   | 'initial'
   | 'inherit'
@@ -155,6 +187,13 @@ export type backgroundSize =
   | 'contain'
   | 'initial'
   | 'inherit'
+
+export type baselineShift =
+  | 'auto'
+  | 'baseline'
+  | 'super'
+  | 'sub'
+  | length
 
 export type border = [borderWidth, ?borderStyle, ?borderColor] | 'initial' | 'inherit'
 
@@ -242,6 +281,41 @@ export type boxShadow =
 
 export type boxSizing = 'content-box' | 'border-box' | 'initial' | 'inherit'
 
+export type breakAfter =
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'page'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso'
+  | 'avoid-column'
+  | 'column'
+  | 'avoid-region'
+  | 'region'
+
+export type breakBefore =
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'page'
+  | 'left'
+  | 'right'
+  | 'recto'
+  | 'verso'
+  | 'avoid-column'
+  | 'column'
+  | 'avoid-region'
+  | 'region'
+
+export type breakInside =
+  | 'auto'
+  | 'avoid'
+  | 'avoid-page'
+  | 'avoid-column'
+  | 'avoid-region'
+
 export type captionSide = 'top' | 'bottom' | 'initial' | 'inherit'
 
 export type caretColor = color
@@ -326,6 +400,10 @@ export type cursor =
   | 'initial'
   | 'inherit'
 
+export type cx = length
+
+export type cy = length
+
 export type direction = 'ltr' | 'rtl' | 'initial' | 'inherit'
 
 export type display =
@@ -350,7 +428,26 @@ export type display =
   | 'initial'
   | 'inherit'
 
+export type dominantBaseline =
+  | 'auto'
+  | 'use-script'
+  | 'no-change'
+  | 'reset-size'
+  | 'ideographic'
+  | 'alphabetic'
+  | 'hanging'
+  | 'mathematical'
+  | 'central'
+  | 'middle'
+  | 'text-after-edge'
+  | 'text-before-edge'
+  | 'inherit'
+
 export type emptyCells = 'show' | 'hide' | 'initial' | 'inherit'
+
+export type fillOpacity = length
+
+export type fillRule = 'nonzero' | 'evenodd'
 
 type filterFunction = string
 export type filter = 'none' | filterFunction | 'initial' | 'inherit'
@@ -393,10 +490,22 @@ export type font =
   | 'initial'
   | 'inherit'
 
+export type fontDisplay =
+  | 'auto'
+  | 'block'
+  | 'swap'
+  | 'fallback'
+  | 'optional'
+
 // TODO: fontFace type
 export type fontFace = Object
 
 export type fontFamily = string | 'initial' | 'inherit'
+
+export type fontFeatureSettings = 'normal' | string
+
+export type fontKerning = 'auto' | 'normal' | 'none'
+
 export type fontSize =
   | 'medium'
   | 'xx-small'
@@ -414,13 +523,79 @@ export type fontSizeAdjust = number | 'none' | 'initial' | 'inherit'
 export type fontStretch = 'ultra-condensed' | 'extra-condensed' | 'condensed' | 'semi-condensed' | 'normal' | 'semi-expanded' | 'expanded' | 'extra-expanded' | 'ultra-expanded' | 'initial' | 'inherit'
 export type fontStyle = 'normal' | 'italic' | 'oblique' | 'initial' | 'inherit'
 export type fontVariant = 'normal' | 'small-caps' | 'initial' | 'inherit'
+export type fontVariantCaps =
+  | 'normal'
+  | 'small-caps'
+  | 'all-small-caps'
+  | 'petite-caps'
+  | 'all-petite-caps'
+  | 'unicase'
+  | 'titling-caps'
+
+export type fontVariationSettings = 'normal' | string
+
 export type fontWeight = 'normal' | 'bold' | 'bolder' | 'lighter' | number | 'initial' | 'inherit'
 
 export type hangingPunctuation = 'none' | 'first' | 'last' | 'allow-end' | 'force-end' | 'initial' | 'inherit'
 
 export type height = 'auto' | length | 'initial' | 'inherit'
 
+export type hyphens = 'none' | 'manual' | 'auto'
+
+export type imageRendering = 'auto' | 'crisp-edges' | 'pixelated'
+
+export type inlineSize = length
+
+export type isolation = 'auto' | 'isolate'
+
 export type justifyContent = 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'initial' | 'inherit'
+
+export type justifyItems =
+  | 'auto'
+  | 'normal'
+  | 'stretch'
+  | 'cetner'
+  | 'start'
+  | 'end'
+  | 'flex-start'
+  | 'flex-end'
+  | 'self-start'
+  | 'self-end'
+  | 'left'
+  | 'right'
+  | 'baseline'
+  | 'first baseline'
+  | 'last baseline'
+  | 'safe center'
+  | 'unsafe center'
+  | 'legacy right'
+  | 'legacy left'
+  | 'legacy center'
+  | 'inherit'
+  | 'initial'
+  | 'unset'
+
+export type justifySelf =
+  | 'auto'
+  | 'normal'
+  | 'stretch'
+  | 'cetner'
+  | 'start'
+  | 'end'
+  | 'flex-start'
+  | 'flex-end'
+  | 'self-start'
+  | 'self-end'
+  | 'left'
+  | 'right'
+  | 'baseline'
+  | 'first baseline'
+  | 'last baseline'
+  | 'safe center'
+  | 'unsafe center'
+  | 'inherit'
+  | 'initial'
+  | 'unset'
 
 // TODO: keyframes type
 export type keyframes = Object
@@ -428,6 +603,10 @@ export type keyframes = Object
 export type left = 'auto' | length | 'initial' | 'inherit'
 
 export type letterSpacing = 'normal' | length | 'initial' | 'inherit'
+
+export type lightingColor = 'currentColor' | 'inherit' | string
+
+export type lineBreak = 'auto' | 'loose' | 'normal' | 'strict'
 
 export type lineHeight = 'normal' | number | length | 'initial' | 'inherit'
 
@@ -468,12 +647,14 @@ export type marginTop = length | 'auto' | 'initial' | 'inherit'
 
 export type maxHeight = 'none' | length | 'initial' | 'inherit'
 export type maxWidth = 'none' | length | 'initial' | 'inherit'
+export type maxZoom = 'auto' | length
 
 // TODO: media type
 export type media = Object
 
 export type minHeight = length | 'initial' | 'inherit'
 export type minWidth = length | 'initial' | 'inherit'
+export type minZoom = 'auto' | length
 
 export type navDown = 'auto' | string | 'initial' | 'inherit'
 export type navIndex = 'auto' | number | 'initial' | 'inherit'
@@ -481,9 +662,13 @@ export type navLeft = 'auto' | string | 'initial' | 'inherit'
 export type navRight = 'auto' | string | 'initial' | 'inherit'
 export type navUp = 'auto' | string | 'initial' | 'inherit'
 
+export type objectFit = 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
+
 export type opacity = number | 'initial' | 'inherit'
 
 export type order = number | 'initial' | 'inherit'
+
+export type orphans = number
 
 export type outline = [outlineColor, ?outlineStyle, ?outlineWidth] | 'initial' | 'inherit'
 export type outlineColor = 'invert' | color | 'initial' | 'inherit'
@@ -494,6 +679,10 @@ export type outlineWidth = 'medium' | 'thin' | 'thick' | length | 'initial' | 'i
 export type overflow = 'visible' | 'hidden' | 'scroll' | 'auto' | 'initial' | 'inherit'
 export type overflowX = overflow
 export type overflowY = overflow
+
+export type overscrollBehavior = 'contain' | 'none' | 'auto' | string
+export type overscrollBehaviorX = 'contain' | 'none' | 'auto'
+export type overscrollBehaviorY = 'contain' | 'none' | 'auto'
 
 export type padding = length | [paddingTop, ?paddingRight, ?paddingBottom, ?paddingLeft] | 'initial' | 'inherit'
 export type paddingBottom = length | 'initial' | 'inherit'
@@ -511,6 +700,19 @@ export type perspective = length | 'none' | 'initial' | 'inherit'
 type axis = 'left' | 'center' | 'right' | length
 export type perspectiveOrigin = [axis, ?axis] | 'initial' | 'inherit'
 
+export type pointerEvents =
+  | 'auto'
+  | 'none'
+  | 'visiblePainted'
+  | 'visibleFill'
+  | 'visibleStroke'
+  | 'visible'
+  | 'painted'
+  | 'fill'
+  | 'stroke'
+  | 'all'
+  | 'inherit'
+
 export type position = 'static' | 'absolute' | 'fixed' | 'relative' | 'initial' | 'inherit'
 
 export type quotes = 'none' | [string, ?string, ?string, ?string] | 'initial' | 'inherit'
@@ -518,6 +720,19 @@ export type quotes = 'none' | [string, ?string, ?string, ?string] | 'initial' | 
 export type resize = 'none' | 'both' | 'horizontal' | 'vertical' | 'initial' | 'inherit'
 
 export type right = 'auto' | length | 'initial' | 'inherit'
+
+export type scrollBehavior = 'auto' | 'smooth'
+
+export type speak =
+  | 'digits'
+  | 'inherit'
+  | 'initial'
+  | 'initial-punctuation'
+  | 'no-punctuation'
+  | 'none'
+  | 'normal'
+  | 'spell-out'
+  | 'unset'
 
 export type tabSize = number | length | 'initial' | 'inherit'
 
@@ -537,6 +752,18 @@ export type textTransform = 'none' | 'capitalize' | 'uppercase' | 'lowercase' | 
 
 export type top = 'auto' | length | 'initial' | 'inherit'
 
+export type touchAction =
+  | 'auto'
+  | 'none'
+  | 'pan-x'
+  | 'pan-left'
+  | 'pan-right'
+  | 'pan-y'
+  | 'pan-up'
+  | 'pan-down'
+  | 'pinch-zoom'
+  | 'manipulation'
+
 type transformFunction = string
 export type transform = 'none' | transformFunction | 'initial' | 'inherit'
 export type transformOrigin = [axis, ?axis, ?length] | 'initial' | 'inherit'
@@ -553,6 +780,8 @@ export type unicodeBidi = 'normal' | 'embed' | 'bidi-override' | 'initial' | 'in
 
 export type userSelect = 'auto' | 'none' | 'text' | 'all'
 
+export type userZoom = 'zoom' | 'fixed'
+
 export type verticalAlign = 'baseline' | length | 'sub' | 'super' | 'top' | 'text-top' | 'middle' | 'bottom' | 'text-bottom' | 'initial' | 'inherit'
 
 export type visibility = 'visible' | 'hidden' | 'collapse' | 'initial' | 'inherit'
@@ -560,6 +789,8 @@ export type visibility = 'visible' | 'hidden' | 'collapse' | 'initial' | 'inheri
 export type whiteSpace = 'normal' | 'nowrap' | 'pre' | 'pre-line' | 'pre-wrap' | 'initial' | 'inherit'
 
 export type width = 'auto' | length | 'initial' | 'inherit'
+
+export type widows = 'inherit' | 'initial' | 'unset' | number
 
 export type willChange = string
 

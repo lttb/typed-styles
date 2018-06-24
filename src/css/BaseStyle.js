@@ -9,6 +9,9 @@ export type BaseStyle = {|
   alignItems?: props.alignItems,
   'align-items'?: props.alignItems,
 
+  alignmentBaseline?: props.alignmentBaseline,
+  'alignment-baseline'?: props.alignmentBaseline,
+
   alignSelf?: props.alignSelf,
   'align-self'?: props.alignSelf,
 
@@ -66,11 +69,26 @@ export type BaseStyle = {|
   backgroundPosition?: props.backgroundPosition,
   'background-position'?: props.backgroundPosition,
 
+  backgroundPositionX?: props.backgroundPositionX,
+  'background-positionX'?: props.backgroundPositionX,
+
+  backgroundPositionY?: props.backgroundPositionY,
+  'background-positionY'?: props.backgroundPositionY,
+
   backgroundRepeat?: props.backgroundRepeat,
   'background-repeat'?: props.backgroundRepeat,
 
+  backgroundRepeatX?: props.backgroundRepeatX,
+  'background-repeat-x'?: props.backgroundRepeatX,
+
+  backgroundRepeatY?: props.backgroundRepeatY,
+  'background-repeatY'?: props.backgroundRepeatY,
+
   backgroundSize?: props.backgroundSize,
   'background-size'?: props.backgroundSize,
+
+  baselineShift?: props.baselineShift,
+  'baseline-shift'?: props.baselineShift,
 
   border?: props.border,
 
@@ -178,8 +196,20 @@ export type BaseStyle = {|
   boxSizing?: props.boxSizing,
   'box-sizing'?: props.boxSizing,
 
+  breakAfter?: props.breakAfter,
+  'break-after'?: props.breakAfter,
+
+  breakBefore?: props.breakBefore,
+  'break-before'?: props.breakBefore,
+
+  breakInside?: props.breakInside,
+  'break-inside'?: props.breakInside,
+
   captionSide?: props.captionSide,
   'caption-side'?: props.captionSide,
+
+  caretColor?: props.caretColor,
+  'caret-color'?: props.caretColor,
 
   clear?: props.clear,
 
@@ -226,12 +256,25 @@ export type BaseStyle = {|
 
   cursor?: props.cursor,
 
+  cx?: props.cx,
+
+  cy?: props.cy,
+
   direction?: props.direction,
 
   display?: props.display,
 
+  dominantBaseline?: props.dominantBaseline,
+  'dominant-baseline'?: props.dominantBaseline,
+
   emptyCells?: props.emptyCells,
   'empty-cells'?: props.emptyCells,
+
+  fillOpacity?: props.fillOpacity,
+  'fill-opacity'?: props.fillOpacity,
+
+  fillRule?: props.fillRule,
+  'fill-rule'?: props.fillRule,
 
   filter?: props.filter,
 
@@ -259,11 +302,20 @@ export type BaseStyle = {|
 
   font?: props.font,
 
+  fontDisplay?: props.fontDisplay,
+  'font-display'?: props.fontDisplay,
+
   fontFace?: props.fontFace,
   'font-face'?: props.fontFace,
 
   fontFamily?: props.fontFamily,
   'font-family'?: props.fontFamily,
+
+  fontFeatureSettings?: props.fontFeatureSettings,
+  'font-feature-settings'?: props.fontFeatureSettings,
+
+  fontKerning?: props.fontKerning,
+  'font-kerning'?: props.fontKerning,
 
   fontSize?: props.fontSize,
   'font-size'?: props.fontSize,
@@ -280,6 +332,12 @@ export type BaseStyle = {|
   fontVariant?: props.fontVariant,
   'font-variant'?: props.fontVariant,
 
+  fontVariantCaps?: props.fontVariantCaps,
+  'font-variant-caps'?: props.fontVariantCaps,
+
+  fontVariationSettings?: props.fontVariationSettings,
+  'font-variation-settings'?: props.fontVariationSettings,
+
   fontWeight?: props.fontWeight,
   'font-weight'?: props.fontWeight,
 
@@ -288,8 +346,24 @@ export type BaseStyle = {|
 
   height?: props.height,
 
+  hyphens?: props.hyphens,
+
+  imageRendering?: props.imageRendering,
+  'image-rendering'?: props.imageRendering,
+
+  inlineSize?: props.inlineSize,
+  'inline-size'?: props.inlineSize,
+
+  isolation?: props.isolation,
+
   justifyContent?: props.justifyContent,
   'justify-content'?: props.justifyContent,
+
+  justifyItems?: props.justifyItems,
+  'justify-items'?: props.justifyItems,
+
+  justifySelf?: props.justifySelf,
+  'justify-self'?: props.justifySelf,
 
   keyframes?: props.keyframes,
 
@@ -297,6 +371,12 @@ export type BaseStyle = {|
 
   letterSpacing?: props.letterSpacing,
   'letter-spacing'?: props.letterSpacing,
+
+  lightingColor?: props.lightingColor,
+  'lighting-color'?: props.lightingColor,
+
+  lineBreak?: props.lineBreak,
+  'line-break'?: props.lineBreak,
 
   lineHeight?: props.lineHeight,
   'line-height'?: props.lineHeight,
@@ -333,6 +413,9 @@ export type BaseStyle = {|
   maxWidth?: props.maxWidth,
   'max-width'?: props.maxWidth,
 
+  maxZoom?: props.maxZoom,
+  'max-zoom'?: props.maxZoom,
+
   media?: props.media,
 
   minHeight?: props.minHeight,
@@ -340,6 +423,9 @@ export type BaseStyle = {|
 
   minWidth?: props.minWidth,
   'min-width'?: props.minWidth,
+
+  minZoom?: props.minZoom,
+  'min-zoom'?: props.minZoom,
 
   navDown?: props.navDown,
   'nav-down'?: props.navDown,
@@ -356,9 +442,14 @@ export type BaseStyle = {|
   navUp?: props.navUp,
   'nav-up'?: props.navUp,
 
+  objectFit?: props.objectFit,
+  'object-fit'?: props.objectFit,
+
   opacity?: props.opacity,
 
   order?: props.order,
+
+  orphans?: props.orphans,
 
   outline?: props.outline,
 
@@ -381,6 +472,15 @@ export type BaseStyle = {|
 
   overflowY?: props.overflowY,
   'overflow-y'?: props.overflowY,
+
+  overscrollBehavior?: props.overscrollBehavior,
+  'overscroll-behavior'?: props.overscrollBehavior,
+
+  overscrollBehaviorX?: props.overscrollBehaviorX,
+  'overscroll-behavior-x'?: props.overscrollBehaviorX,
+
+  overscrollBehaviorY?: props.overscrollBehaviorY,
+  'overscroll-behavior-y'?: props.overscrollBehaviorY,
 
   padding?: props.padding,
 
@@ -410,6 +510,9 @@ export type BaseStyle = {|
   perspectiveOrigin?: props.perspectiveOrigin,
   'perspective-origin'?: props.perspectiveOrigin,
 
+  pointerEvents?: props.pointerEvents,
+  'pointer-events'?: props.pointerEvents,
+
   position?: props.position,
 
   quotes?: props.quotes,
@@ -417,6 +520,11 @@ export type BaseStyle = {|
   resize?: props.resize,
 
   right?: props.right,
+
+  scrollBehavior?: props.scrollBehavior,
+  'scroll-behavior'?: props.scrollBehavior,
+
+  speak?: props.speak,
 
   tabSize?: props.tabSize,
   'tab-size'?: props.tabSize,
@@ -459,6 +567,9 @@ export type BaseStyle = {|
 
   top?: props.top,
 
+  touchAction?: props.touchAction,
+  'touch-action'?: props.touchAction,
+
   transform?: props.transform,
 
   transformOrigin?: props.transformOrigin,
@@ -487,6 +598,9 @@ export type BaseStyle = {|
   userSelect?: props.userSelect,
   'user-select'?: props.userSelect,
 
+  userZoom?: props.userZoom,
+  'user-zoom'?: props.userZoom,
+
   verticalAlign?: props.verticalAlign,
   'vertical-align'?: props.verticalAlign,
 
@@ -496,6 +610,11 @@ export type BaseStyle = {|
   'white-space'?: props.whiteSpace,
 
   width?: props.width,
+
+  widows?: props.widows,
+
+  willChange?: props.willChange,
+  'will-change'?: props.willChange,
 
   wordBreak?: props.wordBreak,
   'word-break'?: props.wordBreak,
