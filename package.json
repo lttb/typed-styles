@@ -12,6 +12,10 @@
     "typed-styles",
     "flowtype"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/lttb/typed-styles.git"
+  },
   "scripts": {
     "lint": "eslint src",
     "lint:staged": "lint-staged",
